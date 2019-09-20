@@ -27,4 +27,4 @@ app.get("/api/cat", (req, res) => {
 
 app.use(express.static("public"));
 
-app.listen(3000, () => console.log("server running"));
+app.listen(process.env.PORT, () => console.log("server running"));
