@@ -11,7 +11,7 @@ async function detect() {
   const button = document.getElementById("detect-button");
   button.disabled = true;
 
-  const response = await fetch("http://localhost:3000/api/cat");
+  const response = await fetch("/api/cat");
   const json = await response.json();
 
   const { width, height, base64 } = json;
